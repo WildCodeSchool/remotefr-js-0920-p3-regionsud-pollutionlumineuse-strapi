@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keymessages",
+  "info": {
+    "name": "keymessage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "richtext"
+    }
+  }
+}

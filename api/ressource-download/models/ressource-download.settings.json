@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ressource_downloads",
+  "info": {
+    "name": "ressource_download",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "richtext"
+    },
+    "url": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "professional": {
+      "type": "boolean"
+    }
+  }
+}

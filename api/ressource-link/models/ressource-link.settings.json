@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ressource_links",
+  "info": {
+    "name": "ressource_link",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "richtext"
+    },
+    "url": {
+      "type": "string"
+    },
+    "professional": {
+      "type": "boolean"
+    }
+  }
+}

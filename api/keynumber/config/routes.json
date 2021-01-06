@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/keynumbers",
+      "handler": "keynumber.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/keynumbers/count",
+      "handler": "keynumber.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/keynumbers/:id",
+      "handler": "keynumber.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/keynumbers",
+      "handler": "keynumber.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/keynumbers/:id",
+      "handler": "keynumber.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/keynumbers/:id",
+      "handler": "keynumber.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

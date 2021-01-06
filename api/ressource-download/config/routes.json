@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ressource-downloads",
+      "handler": "ressource-download.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ressource-downloads/count",
+      "handler": "ressource-download.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ressource-downloads/:id",
+      "handler": "ressource-download.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ressource-downloads",
+      "handler": "ressource-download.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ressource-downloads/:id",
+      "handler": "ressource-download.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ressource-downloads/:id",
+      "handler": "ressource-download.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

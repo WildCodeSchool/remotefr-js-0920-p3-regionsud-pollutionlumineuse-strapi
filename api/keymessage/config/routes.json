@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/keymessages",
+      "handler": "keymessage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/keymessages/count",
+      "handler": "keymessage.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/keymessages/:id",
+      "handler": "keymessage.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/keymessages",
+      "handler": "keymessage.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/keymessages/:id",
+      "handler": "keymessage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/keymessages/:id",
+      "handler": "keymessage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

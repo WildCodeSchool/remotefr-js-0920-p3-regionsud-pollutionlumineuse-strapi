@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "definitions",
+  "info": {
+    "name": "definition"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
