@@ -112,3 +112,8 @@ exports
 *.cache
 build
 .strapi-updater.json
+
+############################
+# Added by WCS team
+############################
+kpl-data.db
