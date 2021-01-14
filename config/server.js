@@ -6,4 +6,5 @@ module.exports = ({ env }) => ({
       secret: env('ADMIN_JWT_SECRET', 'ebeb20b5ef7e75bcedea218882225d25'),
     },
   },
+  url: env('PUBLIC_URL', 'https://pl-api.wild31.com'),
 });
