@@ -12,6 +12,9 @@
   "attributes": {
     "text": {
       "type": "richtext"
+    },
+    "summary": {
+      "type": "string"
     }
   }
 }
