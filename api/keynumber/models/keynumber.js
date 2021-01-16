@@ -12,9 +12,7 @@ module.exports = {
       data.summary = generateSummary(data.text);
     },
     beforeUpdate(params, data) {
-      console.log(data)
       data.summary = generateSummary(data.text);
-      console.log(data)
     },
   },
 };
