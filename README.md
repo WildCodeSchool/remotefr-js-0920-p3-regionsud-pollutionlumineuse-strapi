@@ -4,7 +4,7 @@
 
 Le projet *Kit Pollution Lumineuse* a été réalisé entre les mois de décembre 2020 et février 2021 par des étudiants en développement web du campus "remote" de la Wild Code School, en partenariat avec les porteurs de projet de Région Sud.
 
-Pour le cursus *développement web* de la  la Wild Code School, dans sa déclinaisaon *JavaScript / React / Node.js*, les projets de fin de formation comportent typiquement deux applications : une application serveur basée sur Node.js, une application cliente développée en React.
+Pour le cursus *développement web* de la  la Wild Code School, dans sa déclinaison *JavaScript / React / Node.js*, les projets de fin de formation comportent typiquement deux applications : une application serveur basée sur Node.js, une application cliente développée en React.
 
 Ce dépôt contient le code source de la partie **serveur** du projet *Kit Pollution Lumineuse*.
 
@@ -12,7 +12,7 @@ Celui-ci a été réalisé en langage JavaScript avec le framework / CMS [Strapi
 
 Strapi permet de créer rapidement une "API REST", en configurant les modèles de données via une interface graphique. Les "endpoints" de l'API REST sont automatiquement générés par Strapi lorsqu'on sauvegarde un nouveau modèle. Strapi est très adadpté pour notre usage : permettre de mettre à jour les données du site, sans devoir développer manuellement toute une interface d'administration.
 
-Les sections suivante donnent :
+Les sections suivantes donnent :
 
 * Les instructions pour [démarrer le projet sur un poste de développement](#lancement-etou-développement-en-local),
 * Les instructions pour le [déploiement sur un serveur en production](#déploiement-sur-un-serveur-en-production), pour la partie cliente ([dépôt](https://github.com/WildCodeSchool/remotefr-js-0920-p3-regionsud-pollutionlumineuse-front)) comme pour la partie serveur.
@@ -136,7 +136,7 @@ Ce qui suit est la procédure qui a été suivie pour déployer les deux projets
 
 Pour éviter d'indiquer l'adresse IP publique du serveur, on indiquera `w.x.y.z` pour s'y référer dans la suite de cette documentation.
 
-Sauf mention contraire,
+Sauf mention contraire, les instructions données dans les sections suivantes sont exécutées sur la VM, à laquelle on s'est connecté par SSH.
 
 * Installation d'etckeeper
 * Rétrogradation Node de 15 à 14
@@ -319,7 +319,7 @@ Pour les étapes qui suivent, on se reconnecte d'abord sous le compte `nodejs` :
 
 #### Récupération du code source via Git
 
-Puis on clone le dépôt de l'application cliente du projet KPL :
+Puis on clone le dépôt de l'application serveur du projet KPL :
 
     git clone https://github.com/WildCodeSchool/remotefr-js-0920-p3-regionsud-pollutionlumineuse-strapi kpl-strapi
 
@@ -502,4 +502,4 @@ Puis on redémarre Apache : `sudo systemctl restart apache2`.
 
 > :trophy: Le déploiement de l'application Kit Pollution Lumineuse est terminé.
 
-Il restera à régler certains paramètres d'Apache, ce qu'on verra à la toute fin. Il s'agit essentiellement de sécuriser l'installation d'Apache, en suivant par exemple les conseils de l'article [Apache Security – 10 Tips for a Secure Installation](https://www.acunetix.com/blog/articles/10-tips-secure-apache-installation/).
+Il restera à régler certains paramètres d'Apache, ce qu'on verra à la toute fin, après avoir déployé également le projet Carte d'Identité du Territoire. Il s'agit essentiellement de sécuriser l'installation d'Apache, en suivant par exemple les conseils de l'article [Apache Security – 10 Tips for a Secure Installation](https://www.acunetix.com/blog/articles/10-tips-secure-apache-installation/).
